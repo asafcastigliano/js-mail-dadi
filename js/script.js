@@ -16,12 +16,13 @@ login.addEventListener("click", function(){
 
         if (emails[i] == email){
             find = true;
-            console.log("if");
             break;
         }
     }
 
     if (find){
+
+        console.log("Email trovata");
 
         let points = 0;
         let player;
@@ -49,5 +50,7 @@ login.addEventListener("click", function(){
         } else {
             document.getElementById("punti").innerHTML += " SCONFITTA";
         }
+    } else {
+        console.log("Email non trovata");
     }
 })
